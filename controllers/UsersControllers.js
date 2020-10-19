@@ -22,12 +22,15 @@ exports.Register = AsyncHandler(async (req, res, next) => {
         password,
     })
 
-    if (user) {
+    const token = user.getSignedJwtToken()
+
+    if (createdUser) {
         res.status(201).json({
             _id: createdUser._id,
             email: createdUser.email,
             username: createdUser.username,
-            fullname: createdUser.fullname
+            fullname: createdUser.fullname,
+            token,
         })
     } else {
         return next(new ErrorResponse("Registration failed", 400))
