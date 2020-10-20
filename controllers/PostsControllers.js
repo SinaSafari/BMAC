@@ -99,5 +99,5 @@ exports.DeletePost = AsyncHandler(async (req, res, next) => {
         return next(new ErrorResponse("this user can't delete this post", 401))
     }
     await post.remove()
-    res.status(204).json({ success: true, data: {} })
+    res.status(204).json({})
 })
