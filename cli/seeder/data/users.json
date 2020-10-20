@@ -1,0 +1,15 @@
+[
+    {
+        "email": "admin@amdin.com",
+        "username": "admin",
+        "fullname": "admin",
+        "password": "password",
+        "role": "admin"
+    },
+    {
+        "email": "user@user.com",
+        "username": "user",
+        "fullname": "user",
+        "password": "password"
+    }
+]

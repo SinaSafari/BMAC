@@ -8,7 +8,13 @@
   },
   "scripts": {
     "start": "node server.js",
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "data:import": "node ./cli/seeder/seeder.js import",
+    "data:destroy": "node ./cli/seeder/seeder.js destroy",
+    "data:importUsers": "node ./cli/seeder/seeder.js importUsers",
+    "data:destroyUsers": "node ./cli/seeder/seeder.js destroyUsers",
+    "data:importPosts": "node ./cli/seeder/seeder.js importPosts",
+    "data:destroyPost": "node ./cli/seeder/seeder.js destroyPosts"
   },
   "keywords": [
     "MERN",
