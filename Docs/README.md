@@ -2,7 +2,7 @@
 
 ### **What is it?**
 BAMC (or BuyMeACoffee) is a platform for junior and senior developers to introduce their open source projects to other developer and community. also developers can support eachother by donating other developer (buying a coffee for them). \
-develoers can share their projects in format of a Post. a post is a 512 characters text message represents as a description of the project they want to share or introduce, and link of that project (github repo or live project). other developers can like the post and also share their ideas in comment section of each post. 
+develoers can share their projects in format of a Post. a post is a 512 characters text message represents as a description of the project they want to share or introduce, and link of that project (github repo or live project). other developers can like the post and also share their ideas in comment section of each post. this is a place for finding other people with different skills and abilities so by sharing and introducing your projects to the community the developers can find contributers or ideas. 
 
 ***
 ## **Models**

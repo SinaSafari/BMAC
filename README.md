@@ -1,5 +1,7 @@
 # BMAC
 
+Detailed Docs are [here](https://github.com/SinaSafari/BMAC/tree/main/Docs)
+
 ## TODO:
 - Models:
     - [x] User
@@ -29,11 +31,11 @@
         - [ ] UpdateUser
         - [ ] DeleteUser
     - Post Controllers
-        - [ ] GetAllPosts
-        - [ ] GetASinglePost
-        - [ ] CreateAPost
-        - [ ] UpdateAPost
-        - [ ] DeleteAPost
+        - [x] GetAllPosts
+        - [x] GetASinglePost
+        - [x] CreateAPost
+        - [x] UpdateAPost
+        - [x] DeleteAPost
     - Tranasactions
         - [ ] TODO: Fill this part
 - Middlewares
