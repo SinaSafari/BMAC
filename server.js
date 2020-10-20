@@ -25,5 +25,18 @@ app.use(`${apiCommonRoute}/posts`, PostsRoutes)
 
 app.use(ErrorHandler)
 
+
+if (process.env.NODE_ENV === 'production') {
+    app.use(express.static(path.join(__dirname, '/frontend/out')))
+
+    app.get('*', (req, res) =>
+        res.sendFile(path.resolve(__dirname, 'frontend', 'out', 'index.html'))
+    )
+} else {
+    app.get('/', (req, res) => {
+        res.send('API is running....')
+    })
+}
+
 const port = process.env.PORT || 5000
 app.listen(port, console.log("running"))
