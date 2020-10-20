@@ -39,7 +39,7 @@ these are brief description of models in the app. fields and other explanation.
 ***
 ## **Working wits CLI**
 ### ***Importing Data***
-There are some cli commands in `package.json` for seeding the database. you can use them by simply adding `yarn [command name]` or `npm run [command name]`. the list of the is like below:
+There are some npm commands in `package.json` for seeding the database. you can use them by simply adding `yarn [command name]` or `npm run [command name]`. the list of the is like below:
 
 - `data:import`: imports all the sample data for all of models
 
@@ -63,6 +63,28 @@ or if your using `npm`:
 ```sh
 npm run data:import
 ```
+
+Another way to import data is by using `cli`. the options are: 
+- for importing all data
+```sh
+$ node cli data:import all
+```
+last parameter can be the name of model. for example:
+```sh
+$ node cli data:import user
+```
+
+in the same way, by using `data:destroy` you can clean up the data.
+
+### ***Scaffolding***
+By using cli commands, you can scaffold controller and model. for example:
+```sh
+$ node cli m Test
+```
+the argument `m` represents generating model. by running this command, a file containing base structure of a model in `./models` directory will be created.\
+the argument `c` represents gererating controller with base CRUD functionality. \
+the argument `e` (for entity) used for generating both model and controller at a same time.\
+**Note**: routing will not be implemented by cli.
 ***
 ## **Routes List**
 - Auth:
