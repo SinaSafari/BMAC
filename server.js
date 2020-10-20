@@ -1,4 +1,5 @@
 const express = require('express')
+const dotenv = require("dotenv")
 
 const ConnectDB = require('./config/db')
 const ErrorHandler = require("./middlewares/ErrorHandler")
@@ -8,7 +9,7 @@ const AuthRoutes = require('./routes/AuthRoutes')
 const UsersRoutes = require('./routes/UsersRoutes')
 const PostsRoutes = require('./routes/PostsRoutes')
 
-
+dotenv.config()
 const app = express()
 ConnectDB()
 
@@ -24,5 +25,5 @@ app.use(`${apiCommonRoute}/posts`, PostsRoutes)
 
 app.use(ErrorHandler)
 
-
-app.listen(5000, console.log("running"))
+const port = process.env.PORT || 5000
+app.listen(port, console.log("running"))
